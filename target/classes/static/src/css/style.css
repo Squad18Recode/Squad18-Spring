@@ -1,0 +1,648 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.logo {
+  height: 65px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.logo-conecta{
+  margin-top: 50px;
+  width: 50%;
+  height: 150px;
+}
+
+
+
+
+.navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 998;
+  min-height: 60px;
+  background-color: #006400;
+  color: white;
+  transition: all .3s;
+}
+
+a {
+  color: #ffff !important;
+}
+
+.dropdown-item {
+  color: black !important;
+}
+
+.link-insert {
+  text-decoration: none;
+}
+
+.img-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 10px;
+  font-family: Barlow;
+  background: linear-gradient(-45deg, rgb(0, 0, 128), rgb(75, 0, 130), rgb(0, 0, 128), rgb(0, 0, 128));
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 81px;
+  width: 654px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.card-element {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 32px 0px 40px;
+}
+
+.position-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto !important;
+  margin-top: 45px;
+  padding: 45px;
+  margin-left: 35px;
+}
+
+.card {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 9px;
+  color: #fff;
+  background-color: none;
+  margin-left: 35px;
+  color: #333333;
+}
+
+.header h1,
+p {
+  color: #fff;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  line-height: normal;
+  letter-spacing: .05em;
+  word-break: break-all;
+  margin: 13px;
+}
+
+.header p {
+  font-size: 23px;
+  margin: 0px;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(255, 255, 255);
+
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #333333;
+
+}
+
+.title-card {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.university-section {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 10px;
+  margin-left: 40px;
+  background-color: #FFFACD !important;
+  margin-top: 80px;
+  justify-items: center;
+  padding: 20px;
+  height: 100%;
+  position: relative;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.body-inside-section {
+
+  flex-direction: column;
+  border-radius: 10px;
+  color: #000000;
+  position: relative;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card:hover {
+  background-color: #ddd;
+}
+
+.separate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.maps-all {
+  margin-top: 30px;
+}
+
+.map {
+  width: 100%;
+  height: 500px;
+  background-color: grey;
+
+}
+
+.circulo {
+  width: 120px;
+  height: 120px;
+  border: 5px solid rgb(255, 255, 255);
+  padding: 6px;
+  border-radius: 50%;
+  margin: 0 10px;
+  gap: 42px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform: rotate(-45deg);
+}
+
+.separete-body {
+  display: flex;
+  justify-content: space-between;
+  width: 400px
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel {
+  width: 80%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.cards-container {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.card {
+  flex: 0 0 300px;
+  padding: 20px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #333333;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.services {
+  background-image: url(../../assets/textura-reciclar.avif);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 35px;
+}
+
+.services>h4 {
+  margin-top: 10px;
+}
+
+.insert {
+  background-color: #006400;
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  transition: .3s ease all;
+  transform: scale(1) rotate(-1deg);
+  opacity: 1;
+  color: #fff;
+  margin: 8px 5px;
+  margin-left: 40%;
+  margin-top: 25px;
+  border-radius: 7px;
+}
+
+button {
+  font-size: 24px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: transform 5.9s;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+.last-card {
+  max-width: 1280px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../../assets/plano-fundo.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.last-card-body {
+  height: auto !important;
+  padding: 80px 50px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form-input {
+  width: 100%;
+  min-height: 160px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 0;
+}
+
+.last-card-body p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  margin: 0px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.form-last {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-top: auto;
+  z-index: 1;
+}
+
+.last-card-body strong {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif !important;
+  text-align: center;
+}
+
+.form-input input {
+  position: relative;
+  width: 100%;
+  padding: 0px 8px;
+  background: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  height: inherit;
+  left: -15px;
+  outline: none;
+  margin: 5px 6px;
+  border-radius: 5px;
+  border: solid #e9f0ff 1px;
+  width: 450px;
+}
+
+.last-form button {
+  position: relative;
+  width: 90%;
+  background-color: rgb(5, 69, 124);
+  text-align: center;
+  margin: 12px 0px 0px;
+  padding: 0px;
+  transition: all 0.2s ease 0s;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+  min-height: 50px;
+  max-height: 53px;
+  margin: 5px 6px 7px;
+  left: -15px;
+  font-size: 15px;
+  color: #e9f0ff;
+}
+
+.last-form {
+  max-width: 480px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.d-flex img {
+  width: 80%;
+  height: 80%;
+  margin: 9% 10%;
+  transition: transform 2.0s;
+}
+
+.d-flex>img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  position: relative;
+  top: 25px;
+  height: fit-content;
+  margin: auto;
+  padding: 1rem;
+  background-color: #333333;
+  text-align: center;
+  font-family: 'Poppins', sans-serif !important;
+  color: #fff;
+  border-bottom-right-radius: .5em;
+  border-radius: 5px;
+
+}
+
+.content {
+  margin-top: 100px;
+  padding-left: 15px;
+}
+
+.line {
+  width: 70%;
+}
+
+.events-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+}
+
+.form input {
+  padding: 0 8px;
+  margin-left: 12px;
+  width: 525px;
+  border-radius: 5px;
+}
+
+.form button {
+  position: relative;
+  width: 225px;
+  background-color: rgb(0, 128, 237);
+  text-align: center;
+  margin: 12px 0px 0px;
+  padding: 0px;
+  transition: all 0.2s ease 0s;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1;
+  min-height: 53px;
+  max-height: 53px;
+  margin: 5px 6px 7px;
+  left: 25px;
+  font-size: 15px;
+  color: #e9f0ff;
+}
+
+.context-contacts {
+  display: flex;
+  gap: .4rem;
+  flex-direction: column;
+}
+
+.say-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.say-contacts h5 {
+  margin: 0px;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+
+  color: rgb(51, 51, 51);
+}
+
+.global-content {
+  width: auto;
+  height: auto;
+  padding-left: 15px;
+}
+
+.context-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.context-contacts a {
+  text-decoration: none;
+  margin-left: 12px;
+  color: #333333 !important;
+}
+
+.button-btn {
+  position: relative;
+  top: 24%;
+
+}
+
+footer p {
+  color: #e9f0ff;
+}
+
+.content-second {
+  padding-left: 15px;
+}
+
+.events-form h4 {
+  margin: 0px 0px 1rem;
+  line-height: 1.167;
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-family: "Barlow", sans-serif;
+  color: rgb(51, 51, 51);
+}
+
+.content-second span {
+  margin: 16px 0px 0px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  color: rgb(51, 51, 51);
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.events h4 {
+  color: #000000;
+  font-family: "Barlow";
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0;
+}
+
+.body-carousel h1 {
+
+  color: #e9f0ff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-element {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .university-section {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+  }
+
+  .insert {
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+
+@media (width < 750px) {
+
+  .form-input input {
+    width: 300px;
+  }
+
+  .last-form button {
+    width: 250px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .logo-conecta{
+    width: 80%;
+  }
+}
+
+@media (width < 600px) {
+
+  .last-card {
+    flex-direction: column;
+  }
+
+  .last-card-body {
+    padding-bottom: 40px;
+  }
+
+  .form-last {
+    margin-left: 5%;
+  }
+
+  .form-input {
+    min-height: 100px;
+  }
+}
