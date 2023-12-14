@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="curso.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../src/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../src/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../src/icons/favicon-16x16.png">
+  <link rel="manifest" href="../src/icons/site.webmanifest">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-primary">
+    <div class="container-fluid">
+      <img class="logo" src="../assets/Logo-da-nav.png" alt="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Biodiversidade/bio.html">Biodiversidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../quemSomos/pessoal.html">Sobre Nós</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Conteúdo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../blog/curso.html">Blog</a></li>
+              <li><a class="dropdown-item" href="../fale-conosco/eventos.html">Fale conosco</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="all-items">
+    <div class="title">
+      <h3>Energia e ciência</h3>
+      <div>
+        <p>Todas as notícias sobre energia, energias renováveis e ciência ambiental</p>
+      </div>
+    </div>
+    <div class="items">
+      <div class="card">
+        <div class="media media-2x1 gd-primary">
+          <img class="profile-image" src="../assets/trens-solar.webp">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Trens movido a energia solar na França</h5>
+          <p class="card-text">"Primeira fase do projeto prevê cobrir até 20% da demanda por eletricidade da SNCF,
+            empresa estatal que cuida do transporte ferroviário francês"</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="media media-2x1 gd-primary">
+          <img class="profile-image" src="../assets/nissan-leaf.webp">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Carro elétrico</h5>
+          <p class="card-text">"a Nissan também terá novidades para o elétrico Leaf. Segundo informações de
+            concessionários, o preço do modelo terá uma importante redução de R$ 62.690."</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="media media-2x1 gd-primary">
+          <img class="profile-image" src="../assets/macroalgas.jpg">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Macroalgas</h5>
+          <p class="card-text">"A exploração completa dos extratos pode ser um veículo para que o setor cosmético atenda
+            às demandas ESG."</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="media media-2x1 gd-primary">
+          <img class="profile-image" src="../assets/telhado-verde.jpeg">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">Telhados verde nas cidades</h5>
+          <p class="card-text">"Ferramenta desenvolvida por pesquisadores da FGV e colaboradores internacionais pode
+            ajudar governos a avaliar o real efeito dessas estruturas sobre recursos como água, alimentos e energia"</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="media media-2x1 gd-primary">
+          <img class="profile-image" src="../assets/eolico.jpeg">
+        </div>
+
+        <div class="card-body">
+          <h5 class="card-title">parque eólicos com maiores turbinas</h5>
+          <p class="card-text">"Turbinas terão 259 metros de altura, equivalente à soma das alturas do Monumento a
+            Washington e da Estátua da Liberdade, ou um prédio de ao menos 60 andares."</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; CONECT COLETA - Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+
+      $('.items').slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+
+        ]
+      });
+    });
+  </script>
+</body>
+
+</html>
