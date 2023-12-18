@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro da Empresa</title>
+
+<link rel="stylesheet"
+	href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet"
+	href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+	crossorigin="anonymous">
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<link rel="apple-touch-icon" sizes="180x180"
+	href="../../src/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="../../src/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16"
+	href="../../src/icons/favicon-16x16.png">
+<link rel="manifest" href="../../src/icons/site.webmanifest">
+</head>
+
+<style>
+body {
+	background-image: url(../assets/textura-reciclar.avif);
+	width: 100%;
+	height: 100vh;
+}
+
+.logo {
+	height: 65px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.lef {
+	position: relative;
+	left: 25px;
+}
+
+.navbar {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 998;
+	min-height: 60px;
+	background-color: #006400;
+	color: white;
+	transition: all .3s;
+}
+
+a {
+	color: #ffff !important;
+}
+
+.dropdown-item {
+	color: black !important;
+}
+
+.section-made {
+	margin-top: 55px;
+}
+
+.link-btn {
+	text-decoration: none;
+}
+
+#enviarButton {
+	margin-bottom: 5px;
+}
+</style>
+
+
+<body class="body">
+	<nav class="navbar navbar-expand-lg bg-body-primary">
+		<div class="container-fluid">
+			<img class="logo" src="../../assets/Logo-da-nav.png" alt="logo">
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link"
+						href="../../index.html">Início</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="../../Biodiversidade/bio.html">Biodiversidade</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="../../quemSomos/pessoal.html">Sobre Nós</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> Conteúdo </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="../blog/curso.html">Blog</a></li>
+							<li><a class="dropdown-item"
+								href="../fale-conosco/eventos.html">Fale conosco</a></li>
+							<li><a class="dropdown-item" href="../userobj/loginobj.html">Itens</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="py-1 section-made">
+		<div class="w-full lg:w-8/12 px-4 mx-auto mt-6">
+			<img class="logo-conecta" src="../../assets/logo--conecta.png"
+				alt="Logo">
+			<div
+				class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
+				<div class="rounded-t bg-white mb-0 px-6 py-6">
+					<div class="text-center flex justify-between">
+						<h6 class="text-blueGray-700 text-xl font-bold">Cadastro da
+							Associação</h6>
+
+					</div>
+				</div>
+				<div class="flex-auto px-4 lg:px-10 py-10 pt-0">
+					<form th:action="@{/associacoes/save}" th:object="${associacao}"
+						method="post">
+						<h6
+							class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+							Informações da Associação</h6>
+						<div class="flex flex-wrap">
+							<div class="w-full lg:w-6/12 px-4">
+								<div class="relative w-full mb-3">
+									<label
+										class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+										htmlfor="grid-password"> Nome da Associação </label> <input
+										type="text"
+										class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+										id="nome" th:field="*{nome}" required>
+								</div>
+							</div>
+
+							<div class="w-full lg:w-6/12 px-4">
+								<div class="relative w-full mb-3">
+									<label
+										class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+										htmlfor="grid-password"> Contato (DDD) </label> <input
+										type="number"
+										class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+										id="telefone" th:field="*{telefone}" required>
+								</div>
+							</div>
+
+							<div class="w-full lg:w-6/12 px-4">
+								<div class="relative w-full mb-3">
+									<label
+										class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+										htmlfor="grid-password"> CNPJ </label> <input type="number"
+										class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+										id="cnpj" th:field="*{cnpj}" required>
+								</div>
+							</div>
+
+						</div>
+
+						<hr class="mt-6 border-b-1 border-blueGray-300">
+
+						<h6
+							class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+
+						</h6>
+						<div class="flex flex-wrap">
+
+							<div class="w-full lg:w-12/12 px-4">
+								<div class="relative w-full mb-3">
+									<label
+										class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+										htmlfor="grid-password"> Endereço </label> <input
+										name="Endereço" type="text"
+										class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+										value="">
+								</div>
+							</div>
+
+							<div class="w-full lg:w-4/12 px-4">
+								<div class="relative w-full mb-3">
+									<label
+										class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+										htmlfor="grid-password"> Cidade </label> <input name="cidade"
+										type="text"
+										class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+										value="" required>
+								</div>
+								<div class="relative w-full mb-3">
+									<label name="cidade"
+										class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+										htmlfor="grid-password"> Estado </label> <input name="estado"
+										type="text"
+										class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+										value="" required>
+								</div>
+
+							</div>
+
+							<div class="w-full lg:w-4/12 px-4">
+								<div class="relative w-full mb-3">
+									<label
+										class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+										htmlfor="grid-password"> Número </label> <input name="rua"
+										type="text"
+										class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+										value="">
+								</div>
+								<div class="relative w-full mb-3">
+									<label
+										class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+										htmlfor="grid-password"> Bairro </label> <input name="bairro"
+										type="text"
+										class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+										value="">
+								</div>
+							</div>
+							<div class="w-full lg:w-4/12 px-4">
+								<div class="relative w-full mb-3">
+									<label name="cep"
+										class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+										htmlfor="grid-password"> CEP </label> <input name="cep"
+										type="number"
+										class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+										value="">
+								</div>
+							</div>
+						</div>
+
+						<hr class="mt-6 border-b-1 border-blueGray-300">
+
+						<h6
+							class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+							Características da Associação</h6>
+						<div class="flex flex-wrap">
+							<div class="w-full lg:w-12/12 px-4">
+								<div class="relative w-full mb-3">
+									<label
+										class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+										htmlfor="grid-password"> Características </label>
+									<textarea type="text"
+										class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+										rows="4" id="caracteristicas" th:field="*{caracteristicas}" > </textarea>
+								</div>
+							</div>
+						</div>
+						<button id="enviarButton"
+							class="bg-pink-500 lef text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
+							type="submit">Enviar</button>
+					</form>
+					<div>
+
+						<button
+							class="bg-pink-500 lef text-white active:bg-pink-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
+							type="button">
+							<a class="link-btn" href="../associacoes">Voltar para a
+								listagem 
+						</button>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<footer class="relative  pt-8 pb-6 mt-2">
+		<div class="container mx-auto px-4">
+			<div
+				class="flex flex-wrap items-center md:justify-between justify-center">
+				<div class="w-full md:w-6/12 px-4 mx-auto text-center">
+					<div class="text-sm text-blueGray-500 font-semibold py-1">
+						<a href="https://www.creative-tim.com/product/notus-js"
+							class="text-blueGray-500 hover:text-gray-800" target="_blank"></a>
+						<a href="https://www.creative-tim.com"
+							class="text-blueGray-500 hover:text-blueGray-800" target="_blank"></a>
+						<p>&copy; Conect Coleta - Todos os direitos reservados.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/toastify-js">
+	</script>
+	<script>
+
+document.getElementById("enviarButton").addEventListener("click", function () {
+      Toastify({
+        text: "Enviado com sucesso",
+        duration: 3000,
+        destination: "#",
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: "left",
+        stopOnFocus: true,
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function () {
+
+        }
+      }).showToast();
+    });
+
+    (function () {
+
+      const cep = document.querySelector("input[name=cep]");
+
+      cep.addEventListener('blur', e => {
+        const value = cep.value.replace(/[^0-9]+/, '');
+        const url = `https://viacep.com.br/ws/${value}/json/`;
+
+        fetch(url)
+          .then(response => response.json())
+          .then(json => {
+
+            if (json.logradouro) {
+              document.querySelector('input[name=rua]').value = json.logradouro;
+              document.querySelector('input[name=bairro]').value = json.bairro;
+              document.querySelector('input[name=cidade]').value = json.localidade;
+              document.querySelector('input[name=estado]').value = json.uf;
+            }
+
+
+          });
+      });
+
+    })();
+
+  </script>
+</body>
+
+</html>
