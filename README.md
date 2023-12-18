@@ -1,7 +1,7 @@
 # Projeto -- Conect Coleta 
 
-# Feito Com
-¨Spring Boot
-Mysql
-Thymeleaf
-Hibernate
+<h3Feito Com:</h3>
+<p>Spring Boot</p>
+<p>Mysql</p>
+<p>Thymeleaf</p>
+<p>Hibernate</p>
