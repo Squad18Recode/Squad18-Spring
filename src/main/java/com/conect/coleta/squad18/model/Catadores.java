@@ -44,7 +44,8 @@ public class Catadores {
 	}
 
 	public Catadores(Long idCatador, String nome, String rg, String cpf, String telefone, String endereco,
-			String disponibilidade, String numeroDaCasa, String estado, String cidade, String bairro, String cep) {
+			String disponibilidade, String numeroDaCasa, String estado, String cidade, String bairro, String cep,
+			Set<Associacao> associacao) {
 		super();
 		this.idCatador = idCatador;
 		this.nome = nome;
@@ -58,6 +59,7 @@ public class Catadores {
 		this.cidade = cidade;
 		this.bairro = bairro;
 		this.cep = cep;
+		this.associacao = associacao;
 	}
 
 	public Long getIdCatador() {
@@ -154,6 +156,14 @@ public class Catadores {
 
 	public void setCep(String cep) {
 		this.cep = cep;
+	}
+
+	public Set<Associacao> getAssociacao() {
+		return associacao;
+	}
+
+	public void setAssociacao(Set<Associacao> associacao) {
+		this.associacao = associacao;
 	}
 
 }

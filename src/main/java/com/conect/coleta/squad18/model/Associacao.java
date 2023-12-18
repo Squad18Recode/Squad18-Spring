@@ -21,6 +21,7 @@ public class Associacao {
 	private String nome;
 	private String caracteristicas;
 	private String cnpj;
+	private String telefone;
 	
 	@ManyToMany(mappedBy = "associacao",fetch = FetchType.EAGER)
 	private Set<Catadores> catadores = new HashSet<>();
@@ -29,12 +30,15 @@ public class Associacao {
 		super();
 	}
 
-	public Associacao(Long idAssociacao, String nome, String caracteristicas, String cnpj) {
+	public Associacao(Long idAssociacao, String nome, String caracteristicas, String cnpj, String telefone,
+			Set<Catadores> catadores) {
 		super();
 		this.idAssociacao = idAssociacao;
 		this.nome = nome;
 		this.caracteristicas = caracteristicas;
 		this.cnpj = cnpj;
+		this.telefone = telefone;
+		this.catadores = catadores;
 	}
 
 	public Long getIdAssociacao() {
@@ -67,6 +71,22 @@ public class Associacao {
 
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public Set<Catadores> getCatadores() {
+		return catadores;
+	}
+
+	public void setCatadores(Set<Catadores> catadores) {
+		this.catadores = catadores;
 	}
 
 }
