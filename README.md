@@ -1,6 +1,6 @@
 # Projeto -- Conect Coleta 
 
-<h3Feito Com:</h3>
+<h3>Feito Com:</h3>
 <p>Spring Boot</p>
 <p>Mysql</p>
 <p>Thymeleaf</p>
