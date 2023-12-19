@@ -57,8 +57,6 @@ Coloque exemplos
 
 ## 👷 Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início, colaboradores.
-
 * **Guilherme Rodrigues** - *FrontEnd,BackEnd e BD* - [Guilherme_Rodrigues](https://github.com/GuiAlvesR)
 * **Nome do dev** - *Função realizada* - [nome_do_dev]((https://github.com/GuiAlvesR))
 
