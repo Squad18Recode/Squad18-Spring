@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.conect.coleta.squad18.model.Associacao;
 import com.conect.coleta.squad18.services.AssociacaoService;
 
-
 @Controller
 @RequestMapping("/associacoes")
 public class AssociacaoController {
@@ -37,7 +36,7 @@ public class AssociacaoController {
 	}
 
 	@PostMapping("/save")
-	public String saveDestino(@ModelAttribute("associacao") Associacao associacao) {
+	public String saveAssociacao(@ModelAttribute("associacao") Associacao associacao) {
 		associacaoService.saveAssociacao(associacao);
 		return "redirect:/associacoes";
 	}

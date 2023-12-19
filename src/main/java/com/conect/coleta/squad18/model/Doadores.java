@@ -1,10 +1,17 @@
 package com.conect.coleta.squad18.model;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -27,12 +34,17 @@ public class Doadores {
 	private String bairro;
 	private String cep;
 	
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(name = "doadorReciclavel", joinColumns = @JoinColumn(name = "idReciclavel"), inverseJoinColumns = @JoinColumn(name = "idDoador"))
+	private Set<Reciclaveis> reciclaveis = new HashSet<>();
+	
 	public Doadores() {
 		super();
 	}
 
 	public Doadores(Long idDoador, String nome, String sobrenome, String email, String telefone, String endereco,
-			String disponibilidade, String numeroDaCasa, String estado, String cidade, String bairro, String cep) {
+			String disponibilidade, String numeroDaCasa, String estado, String cidade, String bairro, String cep,
+			Set<Reciclaveis> reciclaveis) {
 		super();
 		this.idDoador = idDoador;
 		this.nome = nome;
@@ -46,6 +58,7 @@ public class Doadores {
 		this.cidade = cidade;
 		this.bairro = bairro;
 		this.cep = cep;
+		this.reciclaveis = reciclaveis;
 	}
 
 	public Long getIdDoador() {
@@ -142,6 +155,14 @@ public class Doadores {
 
 	public void setCep(String cep) {
 		this.cep = cep;
+	}
+
+	public Set<Reciclaveis> getReciclaveis() {
+		return reciclaveis;
+	}
+
+	public void setReciclaveis(Set<Reciclaveis> reciclaveis) {
+		this.reciclaveis = reciclaveis;
 	}
 
 }
