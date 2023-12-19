@@ -1,5 +1,4 @@
-
-![Logo do projeto](https://i.imgur.com/kniMQHu.png)
+![logo--conecta](https://github.com/Squad18Recode/Squad18-Spring/assets/141359733/a9ef19ad-5856-453c-ac1a-c6c841030c9b)
 
 # Conect Coleta
 
