@@ -3,7 +3,6 @@
 # Conect Coleta
 
 Uma breve descrição do projeto aqui.
-![computador](https://github.com/Squad18Recode/Squad18-Spring/assets/141359733/4ec6f812-a1c7-494c-8a39-1cfa3d9566ae)
 
 ## 🔥 Introdução
 
