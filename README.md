@@ -1,4 +1,4 @@
-![logo--conecta](https://github.com/Squad18Recode/Squad18-Spring/assets/141359733/a9ef19ad-5856-453c-ac1a-c6c841030c9b)
+![logo--conecta](https://github.com/Squad18Recode/Squad18-Spring/assets/141359733/5d8ce085-bec5-4044-b2a1-a32d6bae1610)
 
 # Conect Coleta
 
