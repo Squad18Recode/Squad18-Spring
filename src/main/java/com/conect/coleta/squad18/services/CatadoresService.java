@@ -16,4 +16,9 @@ public interface CatadoresService {
 	Catadores updateCatador(Long idCatador, Catadores catadorAtualizado);
 
 	void deleteCatador(Long idCatador);
+
+	
+
+	//void saveCatador(Catadores catador);
+
 }

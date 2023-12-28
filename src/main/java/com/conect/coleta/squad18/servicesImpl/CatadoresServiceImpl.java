@@ -76,4 +76,6 @@ public class CatadoresServiceImpl implements CatadoresService {
 	public void deleteCatador(Long idCatador) {
 		catadoresRepository.deleteById(idCatador);
 	}
+
+	
 }

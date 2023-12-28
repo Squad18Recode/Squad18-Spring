@@ -1,7 +1,9 @@
 package com.conect.coleta.squad18.model;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -165,5 +167,15 @@ public class Catadores {
 	public void setAssociacao(Set<Associacao> associacao) {
 		this.associacao = associacao;
 	}
-
+	
+	
+	public Set<Long> getAssociacaoIds() {
+	    if (associacao != null) {
+	        return associacao.stream()
+	                .map(Associacao::getIdAssociacao)
+	                .collect(Collectors.toSet());
+	    } else {
+	        return Collections.emptySet(); 
+	    }
+	}
 }
