@@ -58,11 +58,7 @@ Coloque exemplos
 ## 👷 Autores
 
 * **Guilherme Rodrigues** - *FrontEnd,BackEnd e BD* - [Guilherme_Rodrigues](https://github.com/GuiAlvesR)
-* **Nome do dev** - *Função realizada* - [nome_do_dev]((https://github.com/GuiAlvesR))
-
-## 📄 Licença
-
-Esse projeto está sob a licença (nome da licença) - acesse os detalhes [LICENSE.md](https://github.com/link_da_licenca).
+* **Gustavo Costa** - *FrontEnd e BackEnd* - [Gustavo Costa](https://github.com/GustavPcosta)
 
 ## 💡 Expressões de gratidão
 
